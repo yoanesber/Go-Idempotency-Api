@@ -1,4 +1,4 @@
-# Transaction Processing Service (Go + Redis + PostgreSQL)
+# Idempotent Transaction API with Go, Redis & PostgreSQL
 
 This service is responsible for processing **financial transactions** in a **secure** and **idempotent** manner using **Go (Gin framework)**, **Redis**, and **PostgreSQL**. Each transaction request must include a unique **Idempotency-Key** to ensure safe retries and prevent duplicate processing. The system uses **Redis** for fast **idempotency checks** and **PostgreSQL** to persist transaction data reliably. The system ensures that **retries do not result in duplicate operations**.
 
